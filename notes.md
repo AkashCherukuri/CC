@@ -1,8 +1,9 @@
 # Index
 1. [Header](#general-header-copy-pasta)
+	- [Time Analysis](#time-analysis)
 2. [STL](#important-functions-and-stuff-from-c++-stl)
 
-3. [Data Structures](#data-structures)
+3. [Specific Data Structures](#data-structures)
 	- [Graphs](#graphs)
 	- [UFDS](#union-find-disjoint-sets)
 	- [Segment Tree](#segment-tree)
@@ -34,6 +35,10 @@
 	} 
 
 ```
+
+### Time Analysis
+
+Usually, most CPUs can solve 100M (10^8) operations in a few seconds. Keep this in mind while coming up with algorithms, because a simple brute force might do the trick if input size is small.
 
 # Tips and stuff for syntax
 
