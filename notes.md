@@ -1,6 +1,7 @@
 # Index
 1. [Header](#general-header-copy-pasta)
 	- [Time Analysis](#time-analysis)
+
 2. [STL](#important-functions-and-stuff-from-c++-stl)
 
 3. [Specific Data Structures](#data-structures)
@@ -69,7 +70,9 @@ Usually, most CPUs can solve 100M (10^8) operations in a few seconds. Keep this 
 - Get size of array in C++
 	`int n = sizeof(arr)/sizeof(arr[0]);`
 
-- Bit operations are faster than operations on `vector<bool>` and `bool[]`
+- To delete a pointer which points to an array, do `delete[] p` instead of just `delete p` !!!
+
+- Bit operations are faster than operations on `vector<bool>` and `bool[]`. Upto 64 bits can be represeted using int, but for larger storage, use `bitset` as it is faster.
 	To get the LSB which is ON; `T = (S & (-S))` as `-S` would be in 2's complement.
 	Turn on all n rightmost bits; `T = (1<<n) - 1` .
 
@@ -155,3 +158,4 @@ Similarly, `cum(i,j)`, that is between i and j, is given by `cum(j)-cum(i)`.
 Now assume that the j'th interval is modified **BY** `k` (that is, `k` new data points have been added which belong to the j'th interval). Then, we add `k` to each of ft\[j\], ft\[j+LSB(j)\], ...
 
 Both operations take O(Logn) time.
+
